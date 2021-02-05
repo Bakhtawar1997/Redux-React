@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
+import Check from './components/index'
+import Elx from './components/hooks'
+//import { connect } from 'react-redux'
 import './App.css';
 
+
 function App() {
+  // console.log(props.name)
+  // console.log(props.check)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Check />
+     <Elx />
     </div>
   );
 }
-
 export default App;
+
+// const mapStateToProps = (state) => ({
+//   name: state.name,
+//   check: 'check out'
+// })
+
+
+
+// export default connect(mapStateToProps, null) (App);
